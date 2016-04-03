@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Category: Android | My Octopress Blog]]></title>
+  <link href="http://fushui.github.io/blog/categories/android/atom.xml" rel="self"/>
+  <link href="http://fushui.github.io/"/>
+  <updated>2016-04-03T21:29:55+08:00</updated>
+  <id>http://fushui.github.io/</id>
+  <author>
+    <name><![CDATA[Your Name]]></name>
+    
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+  <entry>
+    <title type="html"><![CDATA[Post]]></title>
+    <link href="http://fushui.github.io/blog/2016/04/03/fushui/"/>
+    <updated>2016-04-03T18:59:16+08:00</updated>
+    <id>http://fushui.github.io/blog/2016/04/03/fushui</id>
+    <content type="html"><![CDATA[<h1>first level</h1>
+
+<h2>second level</h2>
+
+<p><strong>加粗</strong></p>
+
+<p>~标量~</p>
+
+<ul>
+<li>Android
+
+<ul>
+<li>http</li>
+<li>request</li>
+</ul>
+</li>
+<li>PHP</li>
+<li>HTML</li>
+</ul>
+
+
+<blockquote><p>引用</p></blockquote>
+
+<p><a href="http://www.jikexueyuan.com/course/887_4.html?ss=1">video</a></p>
+
+<p><img src="https://www.google.com.hk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="image" /></p>
+
+<p><video width='640' height='320' preload='metadata' controls poster='http://assets.jikexueyuan.com/practice/list_android.jpg">http://assets.jikexueyuan.com/practice/list_android.jpg</a>'><source src='http://static-jkxy.qiniudn.com/event/jkxy_profile20150318.mp4">http://static-jkxy.qiniudn.com/event/jkxy_profile20150318.mp4</a>' ></video></p>
+
+<pre><code>  public class Test(){
+   public static void main(String[] args{
+     system.print.out("hello world");
+ }
+}
+</code></pre>
+
+<p><code>java This is a java http://www.jikexueyuan.com/course/887_4.html?ss=1 link
+public class Test(){
+   public static void main(String[] args{
+     system.print.out("hello world");
+ }
+}
+</code></p>
+
+<p><figure class='code'><figcaption><span>This is a java <a href="http://www.jikexueyuan.com/course/887_4.html?ss=1">http://www.jikexueyuan.com/course/887_4.html?ss=1</a> link </span></figcaption>
+<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<span class='line-number'>2</span>
+<span class='line-number'>3</span>
+<span class='line-number'>4</span>
+<span class='line-number'>5</span>
+<span class='line-number'>6</span>
+<span class='line-number'>7</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nf">Test</span><span class="o">(){</span>
+</span><span class='line'>   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">{</span>
+</span><span class='line'>     <span class="n">system</span><span class="o">.</span><span class="na">print</span><span class="o">.</span><span class="na">out</span><span class="o">(&amp;</span><span class="n">ldquo</span><span class="o">;</span><span class="n">hello</span> <span class="n">world</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="o">;);</span>
+</span><span class='line'> <span class="o">}</span>
+</span><span class='line'><span class="o">}&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+</span><span class='line'>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
+</span></code></pre></td></tr></table></div></figure></p>
+]]></content>
+  </entry>
+  
+</feed>
