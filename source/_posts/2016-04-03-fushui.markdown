@@ -1,0 +1,57 @@
+---
+layout: post
+title: "post"
+date: 2016-04-03 18:59:16 +0800
+comments: true
+categories: [Android]
+---
+
+#  first level
+## second level
+
+**加粗**
+
+~标量~
+
+- Android 
+  - http
+  - request
+- PHP
+- HTML
+
+>引用
+
+
+[video](http://www.jikexueyuan.com/course/887_4.html?ss=1)
+
+![image](https://www.google.com.hk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png)
+
+{% video http://static-jkxy.qiniudn.com/event/jkxy_profile20150318.mp4 640 320 http://assets.jikexueyuan.com/practice/list_android.jpg %}
+
+
+~~~
+  public class Test(){
+   public static void main(String[] args{
+     system.print.out("hello world");
+ }
+}
+~~~
+
+
+```java This is a java http://www.jikexueyuan.com/course/887_4.html?ss=1 link
+public class Test(){
+   public static void main(String[] args{
+     system.print.out("hello world");
+ }
+}
+```
+
+
+{% codeblock lang:java This is a java http://www.jikexueyuan.com/course/887_4.html?ss=1 link %}
+public class Test(){
+   public static void main(String[] args{
+     system.print.out("hello world");
+ }
+}
+
+{% endcodeblock %}
