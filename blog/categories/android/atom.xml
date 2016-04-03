@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | My Octopress Blog]]></title>
   <link href="http://fushui.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://fushui.github.io/"/>
-  <updated>2016-04-03T21:29:55+08:00</updated>
+  <updated>2016-04-03T21:37:09+08:00</updated>
   <id>http://fushui.github.io/</id>
   <author>
     <name><![CDATA[Your Name]]></name>
@@ -12,6 +12,19 @@
   </author>
   <generator uri="http://octopress.org/">Octopress</generator>
 
+  
+  <entry>
+    <title type="html"><![CDATA[Post]]></title>
+    <link href="http://fushui.github.io/blog/2016/04/03/world/"/>
+    <updated>2016-04-03T18:59:16+08:00</updated>
+    <id>http://fushui.github.io/blog/2016/04/03/world</id>
+    <content type="html"><![CDATA[<h1>first level</h1>
+
+<h2>second level</h2>
+
+<p><video width='640' height='320' preload='metadata' controls poster='http://assets.jikexueyuan.com/practice/list_android.jpg">http://assets.jikexueyuan.com/practice/list_android.jpg</a>'><source src='http://static-jkxy.qiniudn.com/event/jkxy_profile20150318.mp4">http://static-jkxy.qiniudn.com/event/jkxy_profile20150318.mp4</a>' ></video></p>
+]]></content>
+  </entry>
   
   <entry>
     <title type="html"><![CDATA[Post]]></title>
