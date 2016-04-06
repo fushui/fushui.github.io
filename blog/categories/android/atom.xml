@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
 
-  <title><![CDATA[Category: Android | Fushui Blog]]></title>
+  <title><![CDATA[Category: android | Fushui Blog]]></title>
   <link href="http://fushui.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://fushui.github.io/"/>
-  <updated>2016-04-03T23:29:13+08:00</updated>
+  <updated>2016-04-07T00:51:51+08:00</updated>
   <id>http://fushui.github.io/</id>
   <author>
     <name><![CDATA[Fushui]]></name>
@@ -14,83 +14,246 @@
 
   
   <entry>
-    <title type="html"><![CDATA[Post]]></title>
-    <link href="http://fushui.github.io/blog/2016/04/03/world/"/>
-    <updated>2016-04-03T18:59:16+08:00</updated>
-    <id>http://fushui.github.io/blog/2016/04/03/world</id>
-    <content type="html"><![CDATA[<h1>first level</h1>
+    <title type="html"><![CDATA[2A-note]]></title>
+    <link href="http://fushui.github.io/blog/2016/04/05/note-2/"/>
+    <updated>2016-04-05T18:59:16+08:00</updated>
+    <id>http://fushui.github.io/blog/2016/04/05/note-2</id>
+    <content type="html"><![CDATA[<h1>2A_笔记</h1>
 
-<h2>second level</h2>
-
-<p><video width='640' height='320' preload='metadata' controls poster='http://assets.jikexueyuan.com/practice/list_android.jpg">http://assets.jikexueyuan.com/practice/list_android.jpg</a>'><source src='http://static-jkxy.qiniudn.com/event/jkxy_profile20150318.mp4">http://static-jkxy.qiniudn.com/event/jkxy_profile20150318.mp4</a>' ></video></p>
-]]></content>
-  </entry>
-  
-  <entry>
-    <title type="html"><![CDATA[Post]]></title>
-    <link href="http://fushui.github.io/blog/2016/04/03/fushui/"/>
-    <updated>2016-04-03T18:59:16+08:00</updated>
-    <id>http://fushui.github.io/blog/2016/04/03/fushui</id>
-    <content type="html"><![CDATA[<h1>first level</h1>
-
-<h2>second level</h2>
-
-<p><strong>加粗</strong></p>
-
-<p>~标量~</p>
+<h2>how to build layouts</h2>
 
 <ul>
-<li>Android
-
-<ul>
-<li>http</li>
-<li>request</li>
-</ul>
-</li>
-<li>PHP</li>
-<li>HTML</li>
+<li>step1: select views</li>
+<li>step2: position views</li>
+<li>step3: style views</li>
 </ul>
 
 
-<blockquote><p>引用</p></blockquote>
+<h2>添加按钮监听</h2>
 
-<p><a href="http://www.jikexueyuan.com/course/887_4.html?ss=1">video</a></p>
+<h3>activity_main.xml修改代码</h3>
 
-<p><img src="https://www.google.com.hk/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="image" /></p>
+<ul>
+<li><p>Button   添加属性
+android:onClick=&ldquo;submitOrder&rdquo;
+android:onClick=&ldquo;increment&rdquo;
+android:onClick=&ldquo;descrement&rdquo;</p></li>
+<li><p>TextView 添加属性
+android:id=&ldquo;quantity_text_view&rdquo;</p></li>
+</ul>
 
-<p><video width='640' height='320' preload='metadata' controls poster='http://assets.jikexueyuan.com/practice/list_android.jpg">http://assets.jikexueyuan.com/practice/list_android.jpg</a>'><source src='http://static-jkxy.qiniudn.com/event/jkxy_profile20150318.mp4">http://static-jkxy.qiniudn.com/event/jkxy_profile20150318.mp4</a>' ></video></p>
 
-<pre><code>  public class Test(){
-   public static void main(String[] args{
-     system.print.out("hello world");
- }
-}
-</code></pre>
+<h3>MainActivity.java修改代码</h3>
 
-<p><code>java This is a java http://www.jikexueyuan.com/course/887_4.html?ss=1 link
-public class Test(){
-   public static void main(String[] args{
-     system.print.out("hello world");
- }
-}
-</code></p>
-
-<p><figure class='code'><figcaption><span>This is a java <a href="http://www.jikexueyuan.com/course/887_4.html?ss=1">http://www.jikexueyuan.com/course/887_4.html?ss=1</a> link </span></figcaption>
-<div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
+<ul>
+<li><p>MainActivity添加<a href="https://gist.github.com/anonymous/b335094aa30f5866f219">(代码)</a>
+<figure class='code'><figcaption><span>实现点击按钮，id为quantity_text_view的textView值改变</span></figcaption><div class="highlight"><table><tr><td class="gutter"><pre class="line-numbers"><span class='line-number'>1</span>
 <span class='line-number'>2</span>
 <span class='line-number'>3</span>
 <span class='line-number'>4</span>
 <span class='line-number'>5</span>
 <span class='line-number'>6</span>
 <span class='line-number'>7</span>
-</pre></td><td class='code'><pre><code class='java'><span class='line'><span class="kd">public</span> <span class="kd">class</span> <span class="nf">Test</span><span class="o">(){</span>
-</span><span class='line'>   <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">{</span>
-</span><span class='line'>     <span class="n">system</span><span class="o">.</span><span class="na">print</span><span class="o">.</span><span class="na">out</span><span class="o">(&amp;</span><span class="n">ldquo</span><span class="o">;</span><span class="n">hello</span> <span class="n">world</span><span class="o">&amp;</span><span class="n">rdquo</span><span class="o">;);</span>
-</span><span class='line'> <span class="o">}</span>
-</span><span class='line'><span class="o">}&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
+<span class='line-number'>8</span>
+<span class='line-number'>9</span>
+</pre></td><td class='code'><pre><code class='java'><span class='line'>  <span class="kd">public</span> <span class="kt">void</span> <span class="nf">submitOrder</span><span class="o">(</span><span class="n">View</span> <span class="n">view</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="n">display</span><span class="o">(</span><span class="mi">1</span><span class="o">);</span>
+</span><span class='line'>  <span class="o">}&lt;/</span><span class="n">p</span><span class="o">&gt;</span>
 </span><span class='line'>
-</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>
-</span></code></pre></td></tr></table></div></figure></p>
+</span><span class='line'><span class="o">&lt;</span><span class="n">p</span><span class="o">&gt;</span>  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">display</span><span class="o">(</span><span class="kt">int</span> <span class="n">number</span><span class="o">)</span> <span class="o">{</span>
+</span><span class='line'>      <span class="n">TextView</span> <span class="n">quantityTextView</span> <span class="o">=</span> <span class="o">(</span><span class="n">TextView</span><span class="o">)</span> <span class="n">findViewById</span><span class="o">(</span>
+</span><span class='line'>              <span class="n">R</span><span class="o">.</span><span class="na">id</span><span class="o">.</span><span class="na">quantity_text_view</span><span class="o">);</span>
+</span><span class='line'>      <span class="n">quantityTextView</span><span class="o">.</span><span class="na">setText</span><span class="o">(&amp;</span><span class="n">ldquo</span><span class="o">;&amp;</span><span class="n">rdquo</span><span class="o">;</span> <span class="o">+</span> <span class="n">number</span><span class="o">);</span>
+</span><span class='line'>  <span class="o">}</span>
+</span></code></pre></td></tr></table></div></figure></p></li>
+<li>MainActivity添加<a href="https://gist.github.com/anonymous/fa134c55a4a43e8d6004">(代码)</a>
+<code>java 实现实现点击按钮，id为price_text_view的textView值改变
+  private void displayPrice(int number) {
+     TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+     priceTextView.setText(NumberFormat.getCurrencyInstance().format (number));
+  }
+</code></li>
+<li><p>MainActivity添加代码
+```java 实现点击按钮，id为quantity_text_view的textView值增加或减少
+ public void increment(View view) {</p>
+
+<pre><code>  numberOfCoffees++;
+  display(numberOfCoffees);
+</code></pre>
+
+<p>  }
+  public void descrement(View view) {
+      numberOfCoffees &ndash;;
+      display(numberOfCoffees);
+  }</p></li>
+</ul>
+
+
+<pre><code>- NumberFormat类用于格式化价格
+- 设置自动导入包 file-&gt;setting-&gt;auto impor
+
+##java知识
+**局部变量与全局变量**
+
+- 局部变量只作用于方法体内，外部方法无法访问
+- 全局变量作用于整个类内，任何方法都可以访问，但是如果其他方法有声明了与其同名的局部变量，则全局变量的值被覆盖
+
+**在这个程序中变量应设置为全局变量，因为它需要被各个方法访问，实时更新订购数量，从而计算出价格**
+
+##最终代码
+</code></pre>
+
+<p>   &lt;?xml version=&ldquo;1.0&rdquo; encoding=&ldquo;utf-8&rdquo;?>
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/images"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"></p>
+
+<pre><code>&lt;LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentRight="true"
+
+    android:layout_marginTop="200dp"
+    android:orientation="vertical"&gt;
+
+    &lt;TextView
+        android:id="@+id/quantity_text"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="quantity: "
+        android:textAllCaps="true"
+        android:textSize="20sp" /&gt;
+    　　
+
+    &lt;LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/quantity_text"&gt;
+
+        &lt;Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:onClick="increment"
+            android:text="+" /&gt;
+
+        &lt;TextView
+            android:id="@+id/quantity_text_view"
+            android:layout_width="36dp"
+
+            android:layout_height="36dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:text="0"
+            android:textAllCaps="true"
+            android:textSize="16sp" /&gt;
+
+        &lt;Button
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginBottom="16dp"
+            android:gravity="center"
+            android:onClick="descrement"
+            android:text="-" /&gt;
+    &lt;/LinearLayout&gt;
+
+
+    &lt;TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="price: "
+        android:textAllCaps="true"
+        android:textSize="16sp" /&gt;
+
+    &lt;TextView
+        android:id="@+id/price_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textAllCaps="true"
+        android:textSize="16sp" /&gt;
+
+    &lt;Button
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
+        android:onClick="submitOrder"
+        android:text="order"
+        android:textAllCaps="true"
+        android:textSize="16sp" /&gt;
+&lt;/LinearLayout&gt;
+</code></pre>
+
+<p></RelativeLayout></p>
+
+<pre><code></code></pre>
+
+<p>   package com.sj.coffee;</p>
+
+<p>import android.app.Activity;</p>
+
+<p>import android.os.Bundle;
+import android.view.View;
+import android.widget.TextView;</p>
+
+<p>import java.text.NumberFormat;</p>
+
+<p>public class MainActivity extends Activity {</p>
+
+<pre><code>int numberOfCoffees = 0;
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+}
+
+public void submitOrder(View view) {
+    display(numberOfCoffees);
+    displayPrice(numberOfCoffees * 5);
+}
+
+public void increment(View view) {
+
+    numberOfCoffees++;
+    display(numberOfCoffees);
+   // displayPrice(numberOfCoffees * 5);
+}
+public void descrement(View view) {
+    numberOfCoffees --;
+    display(numberOfCoffees);
+   // displayPrice(numberOfCoffees * 5);
+}
+/**
+ * This method displays the given quantity value on the screen.
+ */
+private void display(int number) {
+
+    TextView quantityTextView = (TextView) findViewById(
+            R.id.quantity_text_view);
+    quantityTextView.setText("" + number);
+}
+
+private void displayPrice(int number) {
+    TextView priceTextView = (TextView) findViewById(R.id.price_text_view);
+    priceTextView.setText(NumberFormat.getCurrencyInstance().format (number));
+}
+</code></pre>
+
+<p>}</p>
+
+<p>```</p>
+
+<h2>最终效果图</h2>
 ]]></content>
   </entry>
   
