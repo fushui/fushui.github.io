@@ -4,7 +4,7 @@
   <title><![CDATA[Category: Android | Fushui Blog]]></title>
   <link href="http://fushui.github.io/blog/categories/android/atom.xml" rel="self"/>
   <link href="http://fushui.github.io/"/>
-  <updated>2016-04-07T15:09:18+08:00</updated>
+  <updated>2016-04-07T16:18:12+08:00</updated>
   <id>http://fushui.github.io/</id>
   <author>
     <name><![CDATA[Fushui]]></name>
@@ -254,6 +254,8 @@ private void displayPrice(int number) {
 <p>```</p>
 
 <h2>最终效果图</h2>
+
+<p><img src="http://7xspr3.com1.z0.glb.clouddn.com/coffeeOrderDemo.jpg" alt="image" /></p>
 ]]></content>
   </entry>
   
