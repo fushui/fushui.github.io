@@ -4,7 +4,7 @@
   <title><![CDATA[Fushui Blog]]></title>
   <link href="http://fushui.github.io/atom.xml" rel="self"/>
   <link href="http://fushui.github.io/"/>
-  <updated>2016-04-07T16:18:12+08:00</updated>
+  <updated>2016-04-07T16:30:59+08:00</updated>
   <id>http://fushui.github.io/</id>
   <author>
     <name><![CDATA[Fushui]]></name>
@@ -441,7 +441,7 @@ android:id=&ldquo;quantity_text_view&rdquo;</p></li>
 
 <h2>最终效果图</h2>
 
-<p><img src="http://7xspr3.com1.z0.glb.clouddn.com/coffeeOrderDemo.jpg" alt="image" /></p>
+<p><img src="http://7xspr3.com1.z0.glb.clouddn.com/coffeeOrder.jpg" alt="image" /></p>
 ]]></content>
   </entry>
   
